@@ -1,4 +1,5 @@
 const { App } = require('@slack/bolt');
+
 require("dotenv").config();
 
 const app = new App({
@@ -118,8 +119,7 @@ app.message(/^(saludos|hola|hey).*/, async ({ context,message, say }) => {
   const greeting = context.matches[0];
 
   await say(`${greeting} <@${message.user}>, que tal?`);
-})
-
+});
 
 
 (async () => {
