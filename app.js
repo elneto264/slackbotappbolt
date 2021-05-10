@@ -124,7 +124,7 @@ app.message(/^(saludos|hola|hey).*/, async ({ context,message, say }) => {
 
 app.message('adios', async ({ message, say }) => {
   // say() sends a message to the channel where the event was triggered
-  await say(`See ya later, <@${message.user}> :wave:`);
+  await say(`Hasta luegoooo, <@${message.user}> :wave:`);
 });
 
 
