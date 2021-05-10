@@ -122,6 +122,12 @@ app.message(/^(saludos|hola|hey).*/, async ({ context,message, say }) => {
 });
 
 
+app.message('adios', async ({ message, say }) => {
+  // say() sends a message to the channel where the event was triggered
+  await say(`See ya later, <@${message.user}> :wave:`);
+});
+
+
 (async () => {
   await app.start(process.env.PORT || 3000);
   console.log("⚡️ Bolt app is running!");
