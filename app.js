@@ -69,7 +69,7 @@ app.message('enlaces', async ({ message, say }) => {
                 "emoji": true
               },
               "value": "click_me_123",
-              "url": "https://meet.jit.si/reunidos",
+              "url": `${process.env.reunion}`,
               "action_id": "button-action"
             }
           },
@@ -87,7 +87,7 @@ app.message('enlaces', async ({ message, say }) => {
                 "emoji": true
               },
               "value": "click_me_123",
-              "url": "https://docs.google.com/spreadsheets/d/10iUCFIqy5Sn7oFuuknc0z3ITooyTu80PEigWcTv3CaI/edit?usp=sharing",
+              "url": `${process.env.excel}`,
               "action_id": "button-action"
             }
           },
@@ -105,7 +105,7 @@ app.message('enlaces', async ({ message, say }) => {
                 "emoji": true
               },
               "value": "click_me_123",
-              "url": "https://docs.google.com/document/d/1QIBJAPubjxwyev3ZU6V3efrnFdAAb-IcKYEqtUwAJW0/edit?usp=sharing",
+              "url": `${process.env.word}`,
               "action_id": "button-action"
             }
          
